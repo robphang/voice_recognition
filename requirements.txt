@@ -1,0 +1,8 @@
+
+flask
+python-dotenv
+whisper
+torch
+google-generativeai
+gTTS
+werkzeug
