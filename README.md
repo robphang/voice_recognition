@@ -15,7 +15,7 @@ Mendukung berbagai bahasa seperti **Bahasa Indonesia**, **Bahasa Inggris**, dll.
 | Field   | Tipe     | Keterangan                                  |
 |---------|----------|---------------------------------------------|
 | `audio` | file     | File audio (.mp3, .wav) **(wajib)**         |
-| `lang`  | string   | Kode bahasa (opsional). Contoh: `id`, `en`, `auto` |
+| `lang`  | string   | Kode bahasa (opsional). Contoh: `id`, `en`, `zh`, `ja`, `ko` |
 
 ---
 
@@ -46,6 +46,7 @@ cd proyek-kamu
 pip install -r requirements.txt
 ```
 
+> Pastikan juga python sudah terinstal di pc anda.
 > Pastikan juga `ffmpeg` sudah terinstal (dibutuhkan oleh Whisper).  
 > Install via `choco install ffmpeg` (Windows) atau `brew install ffmpeg` (macOS).
 
@@ -74,7 +75,7 @@ Server akan berjalan di: `http://localhost:5000`
 
 ### ✅ Postman (Form-Data)
 - `audio`: pilih file audio (.mp3, .wav)
-- `lang`: `id` / `en` / `auto` (opsional)
+- `lang`: `id` / `en` / `zh` / `ja` / `ko` (opsional)
 
 ### ✅ Curl
 
