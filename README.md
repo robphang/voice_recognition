@@ -15,7 +15,7 @@ Mendukung berbagai bahasa seperti **Bahasa Indonesia**, **Bahasa Inggris**, dll.
 | Field   | Tipe     | Keterangan                                  |
 |---------|----------|---------------------------------------------|
 | `audio` | file     | File audio (.mp3, .wav) **(wajib)**         |
-| `lang`  | string   | Kode bahasa (opsional). Contoh: `id`, `en`, `zh`, `ja`, `ko` |
+| `lang`  | string   | Kode bahasa (default `id`). Contoh: `id`, `en`, dll |
 
 ---
 
@@ -23,6 +23,7 @@ Mendukung berbagai bahasa seperti **Bahasa Indonesia**, **Bahasa Inggris**, dll.
 
 ```json
 {
+  "audio_output_url": "/download_audio/xxx.mp3",
   "transcript": "saya cinta kamu",
   "language": "id",
   "result": "❌ Salah. Koreksi yang disarankan: 'saya mencintaimu'"
@@ -75,7 +76,7 @@ Server akan berjalan di: `http://localhost:5000`
 
 ### ✅ Postman (Form-Data)
 - `audio`: pilih file audio (.mp3, .wav)
-- `lang`: `id` / `en` / `zh` / `ja` / `ko` (opsional)
+- `lang`: `id` / `en` / dll (default `id`)
 
 ### ✅ Curl
 
